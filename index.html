@@ -1,59 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title> Q1 Drill 2 </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <title>Q1 Project</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #3b3b3b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 6px solid #000;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        form {
+            background-color: #f3f3f3;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 95%;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
+    <header>
+        <h1>Hi! I'm Natalie Ongchuan <br><small>(O.B. Montessorian)</small></h1>
+        <img src="https://via.placeholder.com/100" alt="">
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>
+            My birthday is on <strong>May 17, 2011</strong> and I like to <strong>sing</strong>, <strong>draw</strong>, and play <strong>volleyball</strong> or <strong>games</strong> when I have the time to do so. One of my favorite colors is <span style="color: black;"><strong>black</strong></span> and I adore flowers like <strong>white roses</strong>.
+            <br><br>
+            I've been a student in <strong>O.B.</strong> since the last school year, and so far, I've enjoyed my time here. It feels like time is flying faster the more I enjoy spending time with my teachers and classmates.
+        </p>
+    </section>
+
+    <section>
+    <h2>My Works</h2>
+
+    <div class="artwork">
+        <img src="https://media.discordapp.net/attachments/1156596430312583228/1216364807175929966/20240310_173836.jpg?ex=68dfc400&is=68de7280&hm=3c392f0a3fac2a139d2d786b578a2770edf1850f935ea32094d9126fac90a30b&=&format=webp&width=1010&height=758" 
+             alt="Pencil sketch of a smiling anime-style character">
+        <p class="caption">✏️ One of my sketches – created using pencil on paper.</p>
+    </div>
+</section>
+
+    <section>
 <div class="box">
-<form>
-<h1> SAMPLE FORM </h1>	
-<label form="Fname"> First Name: </label>
-<input type="text" name="Fname" placeholder="John">
-<br>
-<label form="Fname"> Last Name: </label>
-<input type="text" name="Fname" placeholder="Doe">
-<br>
-<label for="pass"> Password: </label>
-<input type="Password" id="pass" placeholder="Password">
-<br>
-<input type="radio" id="rad1" name="radiogrp">
-<label for="rad1"> Male </label>
-<br>
-<input type="radio" id="rad2" name="radiogrp">
-<label for="rad2"> Female </label>
-<br>
-<input type="checkbox" id="check1" name="checkgrp">
-<label for="check1"> Playing </label>
-<br>
-<input type="checkbox" id="check2" name="checkgrp">
-<label for="check2"> Sleeping </label>
-<br>
-<input type="checkbox" id="check3" name="checkgrp">
-<label for="check3"> Eating </label>
-<br>
-<label for="menu"> Grade & Section </label>
-<br>
-<select id="menu" name="section">
-	<option value="Emerald"> Emerald </option>
-	<option value="Ruby"> Ruby </option>
-	<option value="Sapphire"> Sapphire </option>
-	<option value="Topaz"> Topaz </option>
-	<option value="Jade"> Jade </option>
-</select>
-<br>
-<label for="feed"> Feedback </label>
-<br>
-<textarea id="feed" name="comment" rows="10" cols="15" placeholder="type here"></textarea>
+    <form>
+        <h1>Contact Me</h1>
 
-<br>
-<input type="submit" value="submit">
-<input type="reset" value="reset">
+        <!-- Name -->
+        <label for="fullname">Your Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your name...">
 
-</form>
+        <!-- Email -->
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email...">
+
+        <!-- How did you find me? -->
+<label>How did you find me?</label><br>
+<label><input type="radio" name="source" value="Facebook"> Facebook</label>
+<label><input type="radio" name="source" value="Google"> Google</label>
+<label><input type="radio" name="source" value="Friends"> Friends</label><br><br>
+
+<!-- Services Interested In -->
+<label>Services Interested In:</label><br>
+<label><input type="checkbox" name="services" value="Art Commission (Head)"> Art Commission (Head) </label>
+<label><input type="checkbox" name="services" value="Art Commission (Half body)"> Art Commission (Half body) </label>
+<label><input type="checkbox" name="services" value="Art Commission (Whole body)"> Art Commission (Whole body) </label><br><br>
+
+
+
+        <!-- Rating -->
+        <label for="rating">Rate my Portfolio</label><br>
+        <select id="rating" name="rating">
+            <option>-- Select Rating --</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select><br><br>
+
+        <!-- Feedback -->
+        <label for="feedback">Any Feedback?</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="feedback here..."></textarea>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    </form>
 </div>
 
 
