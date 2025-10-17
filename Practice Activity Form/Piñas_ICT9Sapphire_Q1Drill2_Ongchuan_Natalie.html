@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Drill 2</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="box">
+<form>
+	<h1>Music Recommendation</h1>
+
+	<!-- Name -->
+	<label for="name">Your Name:</label><br>
+	<input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+	<!-- Email -->
+	<label for="email">Your Email:</label><br>
+	<input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+	<!-- Music Title -->
+	<label for="title">Recommended Music Title:</label><br>
+	<input type="text" id="title" name="title" placeholder="Music title"><br>
+
+	<!-- Reason -->
+	<label for="reason">Why do you recommend it?</label><br>
+	<textarea id="reason" name="reason" rows="4" cols="40" placeholder="Your reason..."></textarea><br>
+
+	<!-- Genres -->
+	<label>Genres (Select all that apply):</label><br>
+	<input type="checkbox" id="pop" name="genres" value="Pop">
+	<label for="pop">Pop Music</label>
+
+	<input type="checkbox" id="kpop" name="genres" value="Kpop">
+	<label for="kpop">Kpop</label>
+
+	<input type="checkbox" id="jazz" name="genres" value="Jazz">
+	<label for="jazz">Jazz</label>
+
+	<input type="checkbox" id="rock" name="genres" value="Rock">
+	<label for="rock">Rock</label>
+
+	<input type="checkbox" id="classical" name="genres" value="Classical">
+	<label for="classical">Classical</label><br>
+
+	<!-- Rating -->
+	<label>Rate the Music:</label><br>
+	<input type="radio" id="rate1" name="rating" value="1">
+	<label for="rate1">1</label>
+
+	<input type="radio" id="rate2" name="rating" value="2">
+	<label for="rate2">2</label>
+
+	<input type="radio" id="rate3" name="rating" value="3">
+	<label for="rate3">3</label>
+
+	<input type="radio" id="rate4" name="rating" value="4">
+	<label for="rate4">4</label>
+
+	<input type="radio" id="rate5" name="rating" value="5">
+	<label for="rate5">5 (Best)</label><br>
+
+	<!-- Platform -->
+	<label for="platform">Where do you hear it?</label><br>
+	<select id="platform" name="platform">
+		<option value="Spotify">Spotify</option>
+		<option value="YouTube">YouTube</option>
+		<option value="Instagram">Instagram</option>
+		<option value="Facebook">Facebook</option>
+		<option value="Other">Other</option>
+	</select><br><br>
+
+	<!-- Submit -->
+	<input type="submit" value="Submit">
+
+</form>
+</div>
+
+</body>
+</html>
+

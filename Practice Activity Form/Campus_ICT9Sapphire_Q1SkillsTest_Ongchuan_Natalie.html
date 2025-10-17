@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q1 Skills Test</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 20px;
+        }
+
+        header {
+            background-color: #3b3b3b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 6px solid #000;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        form {
+            background-color: #f3f3f3;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        input, textarea {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 95%;
+        }
+
+        input[type="submit"] {
+            background-color: royalblue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+        <section>
+<div class="box">
+    <form>
+        <h1>OBMC Robotics Club Application Form</h1>
+
+        <!-- Name -->
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Your name...">
+
+        <!-- Email -->
+        <label for="email"> Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email...">
+
+        <br>
+
+
+
+        <!-- Level -->
+        <label for="Grade">Grade Level</label><br>
+        <select id="Grade" name="Grade">
+            <option>-- Select Grade --</option>
+            <option value="1">- 7th Grade </option>
+            <option value="2">- 8th Grade </option>
+            <option value="3">- 9th Grade </option>
+            <option value="4">- 10th Grade </option>
+        </select><br><br>
+
+        <!-- Gender? -->
+<label>Gender</label><br>
+
+<label><input type="radio" name="source" value="Male"> Male </label>
+<label><input type="radio" name="source" value="Female"> Female </label><br><br>
+
+<!-- What are your skills? -->
+<label>What are your skills? </label><br>
+<label><input type="checkbox" name="skills" value="Coding"> Coding </label>
+<label><input type="checkbox" name="skills" value="Design"> Design </label>
+<label><input type="checkbox" name="skills" value="Electronics"> Electronics </label><br><br>
+
+        <!-- Reason -->
+        <label for="reason">Tell us why you want to join!</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="answer here..."></textarea>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit Application">
+    </form>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: url('https://images.genius.com/52e1de2cca85a2c12de875230487d3ef.1000x1000x1.jpg') center/cover no-repeat;
+}
+
+form {
+  padding: 30px;
+  border-radius: 12px;
+  width: 500px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+   
+    
+   
